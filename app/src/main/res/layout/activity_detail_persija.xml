@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="camp.bso.inf.scoringboard.DetailPersija">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LINE UP PERSIJA JAKARTA"
+            android:background="#e88030"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+            />
+
+        <ImageView
+            android:layout_width="380dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:src="@drawable/lineuppersija"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailspersijalineup">
+
+        <Button
+            android:id="@+id/webpersija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERSIJA OFFICIAL"
+            />
+
+        <Button
+            android:id="@+id/bolapersija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@+id/webpersija"
+            android:layout_toRightOf="@+id/webpersija"
+            android:text="Bola.com" />
+
+        <Button
+            android:id="@+id/basepersija"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="29dp"
+            android:layout_marginStart="29dp"
+            android:layout_toEndOf="@+id/bolapersija"
+            android:layout_toRightOf="@+id/bolapersija"
+            android:text="alamat" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/gbk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stadion" />
+    </RelativeLayout>
+
+</LinearLayout>
