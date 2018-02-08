@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button persib, persija, scpluspersib, scminpersib, scminpersija, scpluspersija, resetpersibsc, resetpersijasc, news;
+    Button persib, persija, scpluspersib, scminpersib, scminpersija, scpluspersija, resetpersibsc, resetpersijasc, news, stadions;
     TextView scorepersib, scorepersija;
 
 
@@ -122,6 +122,18 @@ public class MainActivity extends AppCompatActivity {
                     String urllink = "http://www.persib.co.id/beranda.aspx#popup";
                     browserIntent.setData(Uri.parse(urllink));
                     startActivity(browserIntent);
+                }
+            });
+        stadions = (Button) findViewById(R.id.stadionvs);
+            stadions.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Uri gmmIntentUri=Uri.parse("geo:-6.957398, 107.712090");
+                    Intent mapIntent= new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                    mapIntent.setPackage("com.google.android.apps.maps");
+                    if(mapIntent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(mapIntent);
+                    }
                 }
             });
     }

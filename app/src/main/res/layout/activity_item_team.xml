@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="6dp">
+    <TextView
+        android:layout_width="wrap_content"
+        style="@style/tanding_tittle"
+        android:text="H- "
+        android:background="#000"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/team1"
+        style="@style/tanding_tittle"
+        android:text="PERSIB"
+        android:layout_weight="0.50"
+        android:gravity="center"
+        android:background="#2f78ed"
+        android:textColor="#fff"
+        />
+    <TextView
+        android:id="@+id/vs"
+        style="@style/tanding_tittle"
+        android:text="VS"
+        android:gravity="center_horizontal"
+        android:layout_weight="0.60"
+        android:background="#ad0000"
+        android:textColor="#fff"/>/>
+
+    <TextView
+        android:id="@+id/team2"
+        style="@style/tanding_tittle"
+        android:text="PERSIJA"
+        android:gravity="center"
+        android:layout_weight="0.50"
+        android:background="#ed7e2f"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        style="@style/tanding_tittle"
+        android:text="-A "
+        android:background="#000"
+        android:textColor="#fff"/>/>
+</LinearLayout>

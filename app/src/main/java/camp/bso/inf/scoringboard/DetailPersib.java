@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class DetailPersib extends AppCompatActivity {
-    Button persibofc, bolapersib, homebasepersib, gbla;
+    Button persibofc, bolapersib, homebasepersib, gblas;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,5 +48,18 @@ public class DetailPersib extends AppCompatActivity {
                     }
                 }
             });
+
+            gblas = (Button) findViewById(R.id.gbla);
+                gblas.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Uri gmmIntentUri=Uri.parse("geo:-6.957398, 107.712090");
+                        Intent mapIntent= new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                        mapIntent.setPackage("com.google.android.apps.maps");
+                        if(mapIntent.resolveActivity(getPackageManager()) != null) {
+                            startActivity(mapIntent);
+                        }
+                    }
+                });
     }
 }
